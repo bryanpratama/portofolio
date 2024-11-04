@@ -49,6 +49,11 @@ p, span, label, input, textarea, li {
     color: var(--secondaryTextColor);
 }
 
+.justify-text {
+    text-align: justify;
+    
+}
+
 a {
     text-decoration: none;
 }
