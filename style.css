@@ -180,6 +180,8 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .hero-name {
@@ -197,8 +199,21 @@ nav ul li a {
 }
 
 .hero-right {
+    /* margin-left: 20px; */
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.profile-photo {
+    /* width: 150px;  */
+    /* height: 150px;  */
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--secondaryBackroundColor);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    object-fit: cover; 
 }
 
 #services {
@@ -542,6 +557,8 @@ footer {
     .hero-right {
         order: -1;
     }
+
+    
 
     .hero-right img {
         width: 40%;
