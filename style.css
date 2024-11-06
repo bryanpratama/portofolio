@@ -80,6 +80,10 @@ a {
     transition: .2s ease-in-out;
 }
 
+.btn-resume:hover {
+    background-color: var(--secondaryBackroundColor);
+}
+
 .btn:hover {
     box-shadow: gray 0px 3px 5px;
 }
