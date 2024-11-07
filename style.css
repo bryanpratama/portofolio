@@ -464,18 +464,20 @@ nav ul li a {
 }
 
 footer {
-    padding: 4rem 0;
-    
+    padding: 5rem 0;
     text-align: center;
 }
 
 .footer-icons {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     
 }
 
 .footer-icons a {
     margin: 0 .5rem;
+    position: relative;
+    display: inline-block;
+
 }
 
 .footer-icons svg {
@@ -491,6 +493,25 @@ footer {
     fill: black;
 }
 
+.social-text {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.footer-icons a:hover .social-text {
+    opacity: 1;
+}
 
 
 @media screen and (max-width: 1000px) {
