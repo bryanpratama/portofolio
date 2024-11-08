@@ -123,13 +123,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -159,45 +152,46 @@ nav ul li {
     align-items: center;
 }
 
-nav ul li a {
-    color: var(--primaryTextColor);
-    position: relative;
-    transition: color 0.3s ease;
+nav ul li a.nav-link {
+    text-decoration: none;
+    color: #333; 
+    font-size: 16px;
+    position: relative; 
+    transition: color 0.3s ease; 
 }
 
-nav ul li a:hover {
-    color: #007BFF;
+nav ul li a.nav-link:hover {
+    color: var(--primaryIconColor); 
 }
 
 
-nav ul li a::after {
+nav ul li a.nav-link::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #007BFF; 
+    background-color: var(--primaryIconColor); 
     left: 0;
-    bottom: -5px;
+    bottom: -5px; 
     transition: width 0.3s ease; 
 }
 
-nav ul li a:hover::after {
+nav ul li a.nav-link:hover::after {
     width: 100%; 
 }
 
 nav ul li a button {
     background: none; 
     border: none; 
-    color: inherit; 
+    color: #333; 
     cursor: pointer; 
     text-decoration: none; 
     padding: 0; 
 }
 
 
-nav ul li a button:hover {
-    color: inherit; 
-    text-decoration: none; 
+nav ul li a.resume-link button:hover {
+    color: var(--primaryIconColor); 
 }
 
 
