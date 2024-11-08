@@ -300,12 +300,39 @@ nav ul li a.resume-link button:hover {
 }
 
 .portofolio {
+    position: relative;
     border-radius: var(--itemBorderRadius);
     overflow: hidden;
     border: 1px solid var(--borderColor);
-    /* display: flex; */
-
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
 }
+
+.portofolio::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    z-index: -1;
+    transition: all 0.3s ease; 
+}
+
+.portofolio:hover {
+    border-color: var(--primaryIconColorHover);
+    box-shadow: 0 0 0 3px var(--primaryIconColorHover);
+}
+
+.portofolio:hover::before {
+    transform: scale(1.05);
+}
+
+
+
+
+
 
 .portofolio-cover {
     
