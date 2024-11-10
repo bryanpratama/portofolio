@@ -18,6 +18,8 @@
     --sectionPadding: 6rem 0;
 
     --itemBorderRadius: 0.7rem;
+
+
 }
 
 .darkmode {
@@ -25,12 +27,12 @@
     --primaryTextColor: rgb(255, 255, 255);
     --secondaryTextColor: rgb(255, 255, 255);
 
-    --borderColor: rgb(190, 47, 47);
-    --lineColor: rgb(56, 54, 185);
+    --borderColor: rgb(221, 221, 221);
+    --lineColor: grey;
 
-    --primaryBackroundColor: rgb(0, 0, 0);
-    --secondaryBackroundColor: rgb(0, 0, 0);
-    --thirdBackroundColor: rgb(0, 0, 0);
+    --primaryBackroundColor: rgb(10, 10, 10);
+    --secondaryBackroundColor: black;
+    --thirdBackroundColor: rgb(224, 224, 255);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     
     --primaryIconColor: rgb(88, 88, 255);
     --primaryIconColorHover: rgb(67, 67, 255);
@@ -185,11 +187,14 @@ a {
     align-items: center;
     font-weight: 700;
     font-size: 2rem;
+    gap: 10px;
 }
 
 .logo a {
     color: var(--primaryTextColor);
 }
+
+
 
 nav ul li {
     display: flex;
@@ -378,6 +383,7 @@ nav ul li a.resume-link button:hover {
     text-align: center;
     background-color: var(--primaryBackroundColor);
     border-radius: var(--itemBorderRadius);
+    
 }
 
 .service h4 {
