@@ -18,6 +18,8 @@
     --navbarButton: rgb(245, 245, 245);
     --navbarTextColor: rgb(3, 3, 3);
 
+    --portofolioBackround: rgb(245, 245, 245);
+
     --sectionPadding: 6rem 0;
 
     --itemBorderRadius: 0.7rem;
@@ -47,6 +49,7 @@
 
     --navbarTextColor: rgb(221, 221, 221);
 
+    --portofolioBackround: rgb(5, 5, 5);
 
     --sectionPadding: 6rem 0;
 
@@ -432,6 +435,8 @@ nav ul li a.resume-link button:hover {
     border: 1px solid var(--borderColor);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
+    background-color: var(--portofolioBackround);
+
 }
 
 .portofolio::before {
@@ -465,7 +470,7 @@ nav ul li a.resume-link button:hover {
     width: 100%;
 
     overflow: hidden;
-
+    
 }
 
 .portofolio-cover img {
@@ -485,6 +490,7 @@ nav ul li a.resume-link button:hover {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    
 }
 
 .portofolio h4 {
@@ -498,6 +504,7 @@ nav ul li a.resume-link button:hover {
 
 .portofolio-title a svg {
     transition: .2s ease-in-out;
+    fill: var(--primaryTextColor);
 }
 
 .portofolio-tags {
