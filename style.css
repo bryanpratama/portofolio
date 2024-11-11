@@ -20,6 +20,8 @@
 
     --portofolioBackround: rgb(245, 245, 245);
 
+    --portofolioImage: brightness(1);
+
     --sectionPadding: 6rem 0;
 
     --itemBorderRadius: 0.7rem;
@@ -50,6 +52,9 @@
     --navbarTextColor: rgb(221, 221, 221);
 
     --portofolioBackround: rgb(5, 5, 5);
+
+    --portofolioImage: brightness(0.7);
+
 
     --sectionPadding: 6rem 0;
 
@@ -225,10 +230,13 @@ nav ul li a.nav-link {
     font-size: 16px;
     position: relative; 
     /* transition: color 0.3s ease;  */
+    transition: transform 0.3s ease;
+
 }
 
 nav ul li a.nav-link:hover {
     color: var(--primaryIconColor); 
+
 }
 
 
@@ -254,12 +262,15 @@ nav ul li a button {
     cursor: pointer; 
     text-decoration: none; 
     padding: 0; 
+
     
 }
 
 
 nav ul li a.resume-link button:hover {
     color: var(--primaryIconColor); 
+    transform: scale(1.05);
+
 }
 
 
@@ -454,6 +465,7 @@ nav ul li a.resume-link button:hover {
 .portofolio:hover {
     border-color: var(--primaryIconColorHover);
     box-shadow: 0 0 0 3px var(--primaryIconColorHover);
+
 }
 
 .portofolio:hover::before {
@@ -478,6 +490,13 @@ nav ul li a.resume-link button:hover {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    filter: var(--portofolioImage);
+}
+
+.portofolio:hover .portofolio-cover img {
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+
 }
 
 .portofolio-info {
